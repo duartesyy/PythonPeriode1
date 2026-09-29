@@ -102,7 +102,7 @@ else:
 # Bonus! Maak een variabel itemCount aan en tel hoeveel items er in de inventory zitten
 
 inventory = ["Sword", "Potion", "Shield", "Bow", "Key"]
-itemCount = 5
+itemCount = len(inventory)
 
 for inventory in inventory:
     print(f"Item:{inventory}")
