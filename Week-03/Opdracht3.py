@@ -1,10 +1,14 @@
+# Naam: Geovana
+# Datum: 29-09-2026
+# Opdracht: Week 3
+
 # Oefening 1
 # Maak een list aan genaamd books met minimaal 5 boeken
 # Gebruik daarna een for-loop om ieder boek 1 voor 1 uit te printen
 
-
-
-
+namen = ["IT", "The Shining", "Pet Sematary", "A figura", "Hidden Pictures"]
+for naam in namen:
+    print(f"{naam}")
 
 # Oefening 2
 # Maak een list aan genaamd games met minimaal 5 games
@@ -12,9 +16,9 @@
 # Print bij iedere game de zin: "Ik speel graag ..."
 # Bijvoorbeeld: "Ik speel graag Minecraft"
 
-
-
-
+games = ["Baldurs Gate 3", "Hollow Knight", "DnD", "Life is Strange", "Stardew Valley"]
+for games in games:
+    print(f"Ik speel graag {games}")
 
 # Oefening 3
 # Maak een list aan genaamd scores met de volgende waardes:
@@ -22,15 +26,20 @@
 # Gebruik een for-loop om iedere score uit te printen
 # Tel bij iedere score 10 punten op en print daarna de nieuwe score uit
 
+scores = [10, 25, 40, 15, 30]
+for i in scores:
+    print(i)
 
-
-
+for i in scores:
+    i += 10
+    print(i)
 
 # Oefening 4
 # Gebruik een for-loop met range() om de getallen 1 tot en met 10 uit te printen
 # Zorg ervoor dat zowel 1 als 10 geprint worden
 
-
+for i in range(1, 11):
+    print(i)
 
 
 
@@ -42,7 +51,10 @@
 # 3 x 5 = 15
 # Ga door tot en met 10 x 5
 
-
+x = 5
+for i in range(1,11):
+    print(f"{x} x {i} = {i * x}")
+    
 
 
 
@@ -53,9 +65,11 @@
 # Print na de loop "START!"
 
 countdown = 10
-
-
-
+while countdown > 0:
+    print(countdown)
+    countdown -= 1
+else:
+    print(f"START!")
 
 
 # Oefening 7
@@ -70,8 +84,12 @@ countdown = 10
 monsterHealth = 100
 damage = 20
 
-
-
+while monsterHealth > 0:
+    print(f"Monster Health:{monsterHealth}")
+    print(f"Damage: {damage}")
+    monsterHealth -= 20
+else:
+    print(f"Monster verslagen!")
 
 
 # Oefening 8
@@ -82,3 +100,16 @@ damage = 20
 # Als het item "Potion" is, print dan "Deze potion geeft health terug"
 # Als het item "Key" is, print dan "Met deze key kun je een deur openen"
 # Bonus! Maak een variabel itemCount aan en tel hoeveel items er in de inventory zitten
+
+inventory = ["Sword", "Potion", "Shield", "Bow", "Key"]
+itemCount = 5
+
+for inventory in inventory:
+    print(f"Item:{inventory}")
+    if inventory == "Potion":
+        print(f"Deze potion geeft health terug")
+    elif inventory == "Key":
+        print(f"Met deze key kun je een deur openen")
+print(f"Jij heeft {itemCount} itens.")
+
+
